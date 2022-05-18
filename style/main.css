@@ -45,7 +45,7 @@ display: none;
 button{
     background-color: transparent;
 }
-#ricomincia{
+#ricomincia,#conferma{
     color: blue;
     font-size: large;
     height: 80px;
