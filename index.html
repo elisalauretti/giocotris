@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIS</title>
+    <link rel="stylesheet" href="style/main.css" />
+    
+</head>
+<body>
+    <div class="bottoni">
+        
+        <div class="posizione">
+            <div class="item"><button id="posizione1">1</button></div>
+            <div class="item"><button id="posizione2">2</button></div>
+            <div class="item"><button id="posizione3">3</button></div>
+            <div class="item"><button id="posizione4">4</button></div>
+            <div class="item"><button id="posizione5">5</button></div>
+            <div class="item"><button id="posizione6">6</button></div>
+            <div class="item"><button id="posizione7">7</button></div>
+            <div class="item"><button id="posizione8">8</button></div>
+            <div class="item"><button id="posizione9">9</button></div>
+        
+        </div>
+        <button id="scelta-croce"><span ><svg width="50" height="50" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                    fill="black" />
+            </svg>
+        </span></button>
+        <button id="scelta-cerchio"><span ><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                    fill="black" />
+            </svg>
+        </span></button>
+        <button id="ricomincia">RICOMICIA</button>
+    </div>
+    <div class="scatola">
+        <div class="casella">
+            <span class="croce 1 ignoto"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                    fill="black" />
+            </svg>
+            </span>
+            <span class="cerchio 1 ignoto"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                    fill="black" />
+            </svg>
+           </span>
+        </div>
+        <div class="casella">
+            <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                        fill="black" />
+                </svg>
+            </span>
+        </div>
+        <div class="casella">
+            <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                        fill="black" />
+                </svg>
+            </span>
+        </div>
+        <div class="casella">
+        <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                    fill="black" />
+            </svg>
+        </span>
+        <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                    fill="black" />
+            </svg>
+        </span>
+        </div>
+        <div class="casella">
+        <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                    fill="black" />
+            </svg>
+        </span>
+        <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                    fill="black" />
+            </svg>
+        </span>
+        </div>
+        <div class="casella">
+            <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                        fill="black" />
+                </svg>
+            </span>
+        </div>
+        <div class="casella">
+        <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                    fill="black" />
+            </svg>
+        </span>
+        <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                    fill="black" />
+            </svg>
+        </span>
+        </div>
+        <div class="casella">
+            <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                        fill="black" />
+                </svg>
+            </span>
+        </div>
+        <div class="casella">
+            <span class="croce"><svg width="50" height="50" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99956 6.58579L14.3635 0.221825L15.7777 1.63604L9.41377 8L15.7777 14.364L14.3635 15.7782L7.99956 9.41421L1.6356 15.7782L0.221383 14.364L6.58535 8L0.221383 1.63604L1.6356 0.221825L7.99956 6.58579Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <span class="cerchio"><svg width="50" height="50" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
+                        fill="black" />
+                </svg>
+            </span>
+        </div>
+    </div>
+    
+</body>
+<script src="gioco.js" type="application/javascript"></script>
+</html>
